@@ -26,12 +26,12 @@ jobs:
     - name: Build Documentation
       uses: Kirbyrawr/docfx-action@master
       with:
-        args: dotnet-stellar-sdk/docfx/docfx.json
+        args: ./docfx/docfx.json
 
     # Publish generated site using GitHub Pages
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _site
+        publish_dir: ./_site
 
