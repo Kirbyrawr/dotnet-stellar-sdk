@@ -1,8 +1,8 @@
 {
 	"metadata": [{
 		"src": [{
-			"files": ["**/*.csproj"],
-			"src": "../stellar-dotnet-sdk"
+			"files": ["*.csproj"],
+			"src": "../stellar-dotnet-sdk/"
 		}],
 		"dest": "api",
 		"filter": "filterConfig.yml",
